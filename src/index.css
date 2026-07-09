@@ -1,0 +1,58 @@
+:root {
+  --bg: #F6F8F7;
+  --surface: #FFFFFF;
+  --ink: #14262B;
+  --ink-soft: #4B5D60;
+  --primary: #0F5C57;
+  --primary-dark: #0A403C;
+  --accent-ai: #6B5FD1;
+  --accent-ai-soft: #EFEDFB;
+  --amber: #B8792B;
+  --amber-soft: #FBF1E3;
+  --line: #DDE3E0;
+  --danger: #B23A3A;
+  --radius: 10px;
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "SF Mono", "Menlo", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: var(--primary);
+}
+
+::selection {
+  background: var(--accent-ai-soft);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent-ai);
+  outline-offset: 2px;
+}
